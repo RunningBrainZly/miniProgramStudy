@@ -1,0 +1,10 @@
+<!-- 
+  icon标签
+   有等待，成功，出错的一些小图标
+   三个属性：
+    type：图标的类型
+    size：图标的大小默认23
+    color:图标的颜色
+ -->
+ <icon type="success" size="50" color=""></icon>
+ <icon type="info"  color="red"></icon>

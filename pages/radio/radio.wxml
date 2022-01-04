@@ -1,0 +1,11 @@
+<!-- 
+  value
+  如果要获取他的值来触发事件，要和radio-group父标签一起使用
+ -->
+
+
+<radio-group bindchange="getRadioValue">
+  <radio value="nan">男</radio>
+  <radio value="nv">女</radio>
+</radio-group>
+<view>你选中的性别是：<text>{{sex}}</text></view>

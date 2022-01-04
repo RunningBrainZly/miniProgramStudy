@@ -1,0 +1,16 @@
+<!--
+  事件绑定bind
+-->
+<input type="text" bindinput="inputChange"/>
+<button bindtap="clickBtn"
+data-num="{{1}}">
++
+</button>
+<view style="text-align: center;">{{num}}</view>
+<!-- 
+  无法再小程序的事件传参中直接传参
+  bindtap="clickBtn2(1)" 不支持的
+  通过自定义属性来让js获取,自定义属性格式
+  data-name=“{{}}”
+ -->
+<button bindtap="clickBtn" data-num="{{-1}}">-</button>

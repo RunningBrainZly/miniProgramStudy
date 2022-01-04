@@ -1,0 +1,10 @@
+<!-- 
+  rpx小程序自动响应式改变大小的单位
+  rpx 默认750rpx就是正常的你设置的值
+   -->
+   
+<view>rpx</view>
+
+<text selectable>
+aaaaaaaaaaaaaaaaaaaaaaa
+</text>

@@ -1,14 +1,62 @@
 {
   "pages":[
+    "pages/zidingyizujian/zidingyizujian",
+    "pages/checkbox/checkbox",
+    "pages/radio/radio",
+    "pages/icon/icon",
+    "pages/button/button",
+    "pages/rich-text/rich-text",
+    "pages/navigator/navigator",
+    "pages/swiper/swiper",
+    "pages/demo04/demo04",
+    "pages/demo03/demo03",
+    "pages/demo02/demo02",
+    "pages/demo01/demo01",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/serach/search",
+    "pages/profile/profile",
+    "pages/fileUpload/fileUpload"
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "校园游览小程序",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#fff"
   },
+  "tabBar": {
+    "color": "#000000",
+    "position": "bottom",
+    "selectedColor": "",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "./images/home.png",
+      "selectedIconPath": "./images/home-select.png"
+    },
+    {
+      "pagePath": "pages/fileUpload/fileUpload",
+      "text": "文件上传",
+      "iconPath": "./images/file-upload.png",
+      "selectedIconPath": "./images/file-upload-select.png"
+    },
+    {
+      "pagePath": "pages/serach/search",
+      "text": "搜索",
+      "iconPath": "./images/search.png",
+      "selectedIconPath": "./images/search-select.png"
+    },
+    {
+      "pagePath": "pages/profile/profile",
+      "text": "我的",
+      "iconPath": "./images/profile.png",
+      "selectedIconPath": "./images/profile-select.png"
+    }
+  ]
+  },
+  "resizable":true,
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

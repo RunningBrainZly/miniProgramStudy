@@ -1,0 +1,19 @@
+<!-- 
+  导航标签：相当于a标签，跳转页面的
+  默认换行，为块级元素，能设置宽高
+  target:在本身小程序跳转还是跳转到其他小程序方式（要跳转到当前的小程序还是其他的小程序 self/miniProgram）
+  	app-id：跳转到其他小程序的appid
+    path：跳转到其他小程序的路径
+  	extra-data：跳转其他小程序携带的数据：目标小程序可在 `App.onLaunch()`，`App.onShow()` 中获取到这份数据。
+  open-type：跳转方式(
+    默认值navigator，保留当前页面，跳转到其他界面，不能跳转到tabbar界面
+    redirect:关闭当前页面，不能回退(只能返回主页面)，不能跳转到tabbar界面
+    switchTab:跳转到tabbar界面，关闭所有非tabbar界面
+    reLaunch:关闭所有页面，打开应用内的某个页面
+    navigateBack:关闭当前页面，返回上一页或多级页面
+    exit：推出小程序，target=“miniProgram”时生效
+    )
+ -->
+<navigator url="../swiper/swiper" open-type="redirect">去轮播图页面</navigator>
+
+<navigator url="../index/index" open-type="switchTab">去主页</navigator>

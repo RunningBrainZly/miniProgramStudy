@@ -1,0 +1,28 @@
+<!-- 
+  页面。js中的事件回调函数放在data同层级下
+  组件。js中的事件回调函数放在methods下
+
+  自定义参数data-参数名  js中在e.currentTarget.dataset.参数名获取
+ -->
+
+<view class="tabs">
+  <view class="tabs-title">
+    <!-- <view class="tabs-item active">首页</view>
+    <view class="tabs-item">原创</view>
+    <view class="tabs-item">分类</view>
+    <view class="tabs-item">关于</view> -->
+
+    <view
+    wx:for="{{tabs}}"
+    wx:key="id"
+    class="tabs-item {{item.isActive?'active':''}}"
+    bindtap="clickTabs"
+    data-index="{{index}}"
+    >
+      {{item.name}}
+    </view>
+  </view>
+  <view class="tabs-content">
+    <slot></slot>
+  </view>
+</view>

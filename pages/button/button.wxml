@@ -1,0 +1,18 @@
+<!-- 
+  button标签
+  	form-type：submit/reset
+    size：默认和mini属性
+    type:这个属性是设置颜色的
+    plain：背景是否镂空，透明
+    disabled:是否禁用
+    loading:提交时前面加不加等待圈
+    
+    open-type:能监听各种事件(contact：打开微信小程序客服功能，需要在小程序后台配置，share:触发用户分享事件,获取手机，获取用户信息，打开用户反馈页面开发者可以在小程序后台日志中查看，打开授权设置页，打开app等，)
+      获取到的信息是经过加密的，要解密
+ -->
+ <button type="primary"
+  open-type="getUserInfo" bindgetuserinfo="getUserProfile" 
+ >提交</button>
+ <button open-type="share" type="warn">分享</button>
+ <button open-type="feedback" >打开用户反馈</button>
+ <button open-type="openSetting" type="primary">打开授权设置页</button>

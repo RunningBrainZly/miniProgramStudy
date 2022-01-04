@@ -1,0 +1,23 @@
+/* 
+  小程序中不需要主动的引入样式
+*/
+/* 
+  使用@import "加相对路径来引入外部的wxss文件"
+*/
+
+/* 
+  小程序中不能使用通配符*选择器
+*/
+
+/* 
+  小程序中只有text标签中的文字可以长按复制（加上selectable），text中只能嵌套text
+
+  支持对文本中的内容进行解码  空格&nbsp  回车等
+*/
+
+view{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: red;
+  font-size: 40rpx;
+}

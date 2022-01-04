@@ -1,0 +1,23 @@
+<!-- 
+  轮播图组件：
+  默认宽度100%，高度150px
+  image默认宽高  320 * 240
+  swiper中要放swiper-item  item中方image图片标签
+
+  属性：
+  	indicator-dots：是否显示指示点
+    autoplay：是否自动切换
+    interval：默认切换间隔5000
+    duration:滑动时长
+    circular：衔接滑动，不开启的话轮播图到最后一张会直接跳到第一张
+ -->
+<swiper 	indicator-dots autoplay interval="3000" circular>
+  <swiper-item>
+    <image src="http://photocq.photo.store.qq.com/psc?/V130zoQZ0iyNQa/oGEovji5dOWVs5ze3TLFdlbsx*1qJsgOan71Zzu.ZMrS3bItMNw.djFZr50mhQXidlX8B2vnwlPBaS53C3SkuA!!/m&bo=AAWrBjAMQBAFCe4!&t=5&w=213&h=284&rf=travel&t=5" mode="widthFix"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="http://photocq.photo.store.qq.com/psc?/V130zoQZ0iyNQa/AQcIL30w4PRNLA8O7NR*vF7VhdUG*PcTwwKmVvi5ATdb81717p7Mx*an0hvO1hKoB8vMi8j5VV4a2hrfFRT4uNcGayqodEf7rGiooykA9KY!/b&bo=AAWrBjAMQBAFGf4!&rf=viewer_4" mode="widthFix"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="http://photocq.photo.store.qq.com/psc?/V130zoQZ0iyNQa/AQcIL30w4PRNLA8O7NR*vLeiO57DpHqJBdxyQ*yCJXYBfQvI.Dym92Hg4UryyFesTvmsEfpYaMF7lVKYMPgKK1ByVzwn3EK43ePQh7.Zgxo!/b&bo=AAWrBjAMQBAFOd4!&rf=viewer_4" mode="widthFix"></image></swiper-item>
+</swiper>

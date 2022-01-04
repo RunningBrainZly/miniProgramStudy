@@ -1,0 +1,11 @@
+<!-- 
+  要和checkbox-group联用
+ -->
+
+ <checkbox-group bindchange="aaa">
+ 爱好
+ <view><checkbox value="a" color="red">篮球</checkbox></view>
+ <view><checkbox value="b">羽毛球</checkbox></view>
+ <view><checkbox value="c">乒乓球</checkbox></view>
+ </checkbox-group>
+ <view>你选择了{{aihao}}</view>

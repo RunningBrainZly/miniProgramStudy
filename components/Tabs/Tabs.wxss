@@ -1,0 +1,17 @@
+.tabs{
+
+}
+.tabs-title{
+  display: flex;
+  text-align: center;
+}
+.tabs-content{
+
+}
+.tabs-item{
+  flex: 1;
+  padding: 10px;
+}
+.active{
+border-bottom: 2px red solid;
+}

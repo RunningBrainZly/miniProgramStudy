@@ -1,0 +1,54 @@
+<!--
+  text标签相当与span标签，行内元素
+  view标签相当于div标签，块元素
+-->
+<text>pages/demo01/demo01.wxml</text>
+<view>{{mesg}}</view>
+<view>{{preson.name}}</view>
+
+
+<!-- 自定义属性：在标签的属性中引用值,再控制台的wxml中查看 -->
+<view data-preson="{{preson.name}}">hello world</view>
+
+<view>
+  <checkbox checked="{{isChecked}}"></checkbox>
+</view>
+
+<!-- 表达式：能在{{}}中使用的，加减乘除运算，字符串拼接，三目运算 -->
+<view>{{1+1}}</view>
+<view>{{"1"+"1"}}</view>
+<view>{{10%2==0? "偶数":"奇数"}}</view>
+
+<!-- 
+  列表循环wx:for=“{{数组}}” wx:for-item="循环项的名称" wx:for-index="循环索引"
+  wx:key="数组对象中的唯一属性"
+  或者wx:key="*this"
+
+  对象循环：wx:for="{{对象}}"
+  wx:for-item="对象的值" wx:for-index="对象中的属性"
+  -->
+<view wx:for="{{list}}" wx:for-item="item"
+wx:for-index="index"
+wx:key="*this"
+>
+{{item.name}}  age:{{item.age}}
+</view>
+
+<view wx:for="{{preson}}"
+wx:for-index="shuxing"
+wx:for-item="valuse"
+>
+属性：{{shuxing}}
+<view>
+  值：{{valuse}}
+</view>
+</view>
+
+<!-- block标签占位符标签，页面渲染的时候会自动删除 -->
+
+<!-- 
+  条件渲染
+ -->
+<view wx:if="{{isChecked}}">aaa</view>
+<view wx:elif="{{isChecked}}">ccc</view>
+<view wx:else="{{isChecked}}">bbb</view>

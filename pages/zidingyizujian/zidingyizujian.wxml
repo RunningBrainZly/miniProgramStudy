@@ -1,0 +1,24 @@
+<!-- 
+  自定义组件（把公共模块组件抽离出来，方便维护，代码简洁）
+    1.创建组件，新建components文件夹，划分好目录后右键新建component
+      和不同页面的区别，json中有component：true
+       js中一些方法的区别
+    2.使用组件，在要用组件的页面json中usingComponents:{里面放键值对  “组件名”："组件路径"}中添加
+ -->
+
+
+<!-- 
+  父组件向子组件传递参数：通过标签属性传递
+    子组件在prop中定义接收
+ -->
+ <!-- 
+   子组件向父组件传递参数：通过发出自定义事件来传参
+   this.triggerEvent("自定义事件名",参数)
+  -->
+ <Tabs aaa="123" bindclickEvent="clickEvent">
+  <block wx:if="{{tabs[0].isActive}}">0</block>
+  <block wx:elif="{{tabs[1].isActive}}">1</block>
+  <block wx:elif="{{tabs[2].isActive}}">2</block>
+  <block wx:else="{{tabs[3].isActive}}">3</block>
+</Tabs>
+

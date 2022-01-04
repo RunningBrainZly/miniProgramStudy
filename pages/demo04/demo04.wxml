@@ -1,0 +1,20 @@
+  <!-- 
+  小程序上线打包有大小要求，2m，用上分包技术也不能超过10m
+  所以所有的静态资源都从网上获取比较合适
+  -->
+  <!-- 
+  小程序中的图片默认是320px x 240px的
+  -->
+  <!-- 
+  把图片上传到qq空间的相册就能得到一个网络地址
+  -->
+  <!-- 
+    image标签中mode属性决定图片的大小改变后如何显示，拉伸，缩小，或者裁剪的方式
+    默认拉伸至和高度宽度相等(scaleToFill)
+    aspectFit:保持纵横缩放，留最长边
+    widthFix
+    小程序中的图片直接支持懒加载
+    lazy-load
+   -->
+  <image src="http://m.qpic.cn/psc?/V130zoQZ0iyNQa/45NBuzDIW489QBoVep5mcR57bESxT9Yb*IlJYtp9TzqcoFsL2GF2pzMrlZt5pdAvN68otXPVvJuE0XxeGChtu2j.QYMBphPQIAmeFIhvZEA!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4" mode="aspectFit" lazy-load></image>
+ 
