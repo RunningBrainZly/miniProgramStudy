@@ -1,2 +1,1 @@
-<!--pages/yemianshengmingzhouqi/yemianshengmingzhouqi.wxml-->
-<text>pages/yemianshengmingzhouqi/yemianshengmingzhouqi.wxml</text>
+<view>{{msg}}</view>
